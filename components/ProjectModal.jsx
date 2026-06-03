@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function CloseIcon() {
@@ -64,6 +64,12 @@ function JournalIcon() {
 }
 
 export default function ProjectModal({ project, onClose }) {
+  const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    setActiveImage(0);
+  }, [project]);
+
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") onClose();
@@ -78,6 +84,8 @@ export default function ProjectModal({ project, onClose }) {
   }, [onClose]);
 
   if (!project) return null;
+
+  const images = project.images || [];
 
   return (
     <AnimatePresence>
@@ -117,6 +125,40 @@ export default function ProjectModal({ project, onClose }) {
           >
             <CloseIcon />
           </button>
+          {images.length > 0 && (
+            <div className="overflow-hidden rounded-t-3xl bg-slate-100 dark:bg-slate-800">
+              <img
+                src={images[activeImage]}
+                alt={`${project.title} preview ${activeImage + 1}`}
+                className="h-56 sm:h-72 w-full object-cover"
+              />
+
+              {images.length > 1 && (
+                <div className="flex gap-3 overflow-x-auto p-4">
+                  {images.map((image, index) => (
+                    <button
+                      key={image}
+                      type="button"
+                      onClick={() => setActiveImage(index)}
+                      className={`h-16 w-24 shrink-0 overflow-hidden rounded-xl border-2 transition ${
+                        activeImage === index
+                          ? "border-primary-500"
+                          : "border-transparent opacity-70 hover:opacity-100"
+                      }`}
+                      aria-label={`Show ${project.title} screenshot ${index + 1}`}
+                    >
+                      <img
+                        src={image}
+                        alt=""
+                        className="h-full w-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
           <div className="p-6 sm:p-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4">
               {project.title}

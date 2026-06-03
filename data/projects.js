@@ -4,8 +4,8 @@ const projects = {
       id: 1,
       title: "Kopi Cerita",
       description:
-        "Dibangun dengan Next.js, Prisma, dan Neon PostgreSQL. Aplikasi e-commerce coffee shop full-stack dengan menu interaktif, keranjang belanja, checkout, program loyalitas, dan dashboard admin real-time.",
-      tech: ["Next.js", "TypeScript", "Prisma", "Neon", "NextAuth"],
+        "Dibangun dengan Next.js, TypeScript, Prisma, dan PostgreSQL. Aplikasi e-commerce coffee shop full-stack dengan menu interaktif, wishlist, modifier produk, keranjang tersinkronisasi, checkout dine-in/takeaway, kupon, loyalty points, ulasan, AI assistant, dan dashboard admin dengan notifikasi order serta export laporan.",
+      tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth"],
       images: [
         "/images/projects/kopi-cerita/kopi-cerita1.png",
         "/images/projects/kopi-cerita/kopi-cerita2.png",
@@ -21,6 +21,24 @@ const projects = {
 
     {
       id: 2,
+      title: "ServiceBooking",
+      description:
+        "Dibangun dengan Laravel, Filament, dan Tailwind CSS. Platform booking layanan online dengan katalog service, filter pencarian, alur reservasi pelanggan, riwayat booking, reschedule/cancel, review, dashboard admin, kalender jadwal, role admin/customer/provider, dan export laporan PDF/Excel.",
+      tech: ["Laravel", "Filament", "Tailwind CSS", "Alpine.js", "MySQL"],
+      images: [
+        "/images/projects/servicebooking/servicebooking1.png",
+        "/images/projects/servicebooking/servicebooking2.png",
+        "/images/projects/servicebooking/servicebooking3.png",
+        "/images/projects/servicebooking/servicebooking4.png",
+        "/images/projects/servicebooking/servicebooking5.png",
+      ],
+      github: "https://github.com/fadlnsyah/servicebooking",
+      youtube: null,
+      website: null,
+    },
+
+    {
+      id: 3,
       title: "E-Commerce Katalog",
       description:
         "Dibangun dengan Laravel dan Filament. Website katalog produk modern dengan panel admin yang powerful, manajemen produk efisien, dan UI toko yang elegan.",
@@ -35,7 +53,7 @@ const projects = {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Portfolio Developer",
       description:
         "Dibangun dengan Next.js dan Framer Motion. Website portfolio interaktif dengan animasi smooth, dark/light mode, dan dukungan dwibahasa untuk impress recruiter dan klien.",
@@ -47,7 +65,7 @@ const projects = {
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Platform E-Learning",
       description:
         "Dibangun dengan Laravel. Platform pembelajaran digital untuk sekolah dasar dengan kuis interaktif, penilaian otomatis, dan dashboard analitik untuk guru dan siswa.",
@@ -62,7 +80,7 @@ const projects = {
     },
 
     {
-      id: 5,
+      id: 6,
       title: "AI Egg Predictor",
       description:
         "Model machine learning untuk prediksi berat telur dari gambar menggunakan Mask R-CNN dan XGBoost. Proyek riset yang dipublikasikan di jurnal ilmiah dengan akurasi tinggi.",
@@ -85,8 +103,8 @@ const projects = {
       id: 1,
       title: "Kopi Cerita",
       description:
-        "Built with Next.js, Prisma, and Neon PostgreSQL. Full-stack coffee shop e-commerce app featuring interactive menu, shopping cart, checkout, loyalty program, and real-time admin dashboard.",
-      tech: ["Next.js", "TypeScript", "Prisma", "Neon", "NextAuth"],
+        "Built with Next.js, TypeScript, Prisma, and PostgreSQL. Full-stack coffee shop e-commerce app featuring interactive menus, wishlist, product modifiers, synced cart, dine-in/takeaway checkout, coupons, loyalty points, reviews, AI assistant, and an admin dashboard with order notifications plus report exports.",
+      tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth"],
       images: [
         "/images/projects/kopi-cerita/kopi-cerita1.png",
         "/images/projects/kopi-cerita/kopi-cerita2.png",
@@ -102,6 +120,24 @@ const projects = {
 
     {
       id: 2,
+      title: "ServiceBooking",
+      description:
+        "Built with Laravel, Filament, and Tailwind CSS. Online service booking platform with service catalog, search filters, customer reservation flow, booking history, reschedule/cancel actions, reviews, admin dashboard, schedule calendar, admin/customer/provider roles, and PDF/Excel report exports.",
+      tech: ["Laravel", "Filament", "Tailwind CSS", "Alpine.js", "MySQL"],
+      images: [
+        "/images/projects/servicebooking/servicebooking1.png",
+        "/images/projects/servicebooking/servicebooking2.png",
+        "/images/projects/servicebooking/servicebooking3.png",
+        "/images/projects/servicebooking/servicebooking4.png",
+        "/images/projects/servicebooking/servicebooking5.png",
+      ],
+      github: "https://github.com/fadlnsyah/servicebooking",
+      youtube: null,
+      website: null,
+    },
+
+    {
+      id: 3,
       title: "E-Commerce Catalog",
       description:
         "Built with Laravel and Filament. Modern product catalog website with powerful admin panel, efficient product management, and elegant storefront UI.",
@@ -116,7 +152,7 @@ const projects = {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Developer Portfolio",
       description:
         "Built with Next.js and Framer Motion. Interactive portfolio website with smooth animations, dark/light mode, and bilingual support to impress recruiters and clients.",
@@ -128,7 +164,7 @@ const projects = {
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Siakad Platform",
       description:
         "Built with Laravel. Digital learning platform for elementary schools featuring interactive quizzes, auto-grading, and analytics dashboard for teachers and students.",
@@ -143,7 +179,7 @@ const projects = {
     },
 
     {
-      id: 5,
+      id: 6,
       title: "AI Egg Predictor",
       description:
         "Machine learning model for predicting egg weight from images using Mask R-CNN and XGBoost. A published research project with high accuracy results.",
