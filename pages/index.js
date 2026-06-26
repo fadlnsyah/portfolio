@@ -196,7 +196,7 @@ function AboutPanel({ lang, about, hero, projectCount }) {
               <p className="text-sm text-slate-500 dark:text-slate-400">
                 {lang === "id" ? "Pengalaman" : "Experience"}
               </p>
-              <p className="mt-2 font-display text-3xl font-bold text-slate-950 dark:text-white">2+</p>
+              <p className="mt-2 font-display text-3xl font-bold text-slate-950 dark:text-white">3+</p>
               <p className="mt-1 text-xs uppercase tracking-[0.2em] text-slate-400">
                 {lang === "id" ? "Tahun" : "Years"}
               </p>
