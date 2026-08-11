@@ -120,8 +120,15 @@ function AboutPanel({ lang, about, hero, projectCount }) {
             </h1>
           </div>
 
-          <div className="inline-flex w-fit items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
-            {hero.role}
+          <div className="flex flex-wrap items-center gap-2.5">
+            {(hero.roles || ["Software Engineer", "Full Stack Developer"]).map((r) => (
+              <span
+                key={r}
+                className="inline-flex w-fit items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200"
+              >
+                {r}
+              </span>
+            ))}
           </div>
           <div className="grid max-w-3xl gap-6 border-t border-slate-200/80 pt-6 dark:border-white/10 sm:grid-cols-2">
             {[
@@ -186,7 +193,7 @@ function AboutPanel({ lang, about, hero, projectCount }) {
               </div>
               <div>
                 <p className="text-sm text-slate-400">{lang === "id" ? "Peran" : "Role"}</p>
-                <p className="mt-1 text-lg font-medium text-slate-700 dark:text-slate-200">{hero.role}</p>
+                <p className="mt-1 text-lg font-medium text-slate-700 dark:text-slate-200">Software Engineer &amp; Full Stack Developer</p>
               </div>
             </div>
           </div>
