@@ -11,7 +11,8 @@ const content = {
       greeting: "Halo, saya",
       name: "Muhammad Fadlansyah Zikri Akhiruddin Rawosi",
       nickname: "Fadlan",
-      role: "Software Engineer & Full Stack Developer",
+      role: "Software Engineer",
+      roles: ["Software Engineer", "Full Stack Developer"],
       subtitle:
         "Saya membangun produk web yang rapi, cepat, dan mudah dikembangkan. Fokus saya ada pada frontend yang bersih, backend yang maintainable, dan pengalaman pengguna yang terasa solid.",
       cta: {
@@ -22,7 +23,7 @@ const content = {
     about: {
       title: "Tentang Saya",
       description:
-        "Saya adalah Software Engineer & Full Stack Developer yang nyaman bekerja di sisi frontend maupun backend. Saya menyukai produk digital yang terasa tenang, jelas, dan fungsional, dengan perhatian yang kuat pada struktur kode, maintainability, dan detail antarmuka.",
+        "Saya adalah Software Engineer dan Full Stack Developer yang nyaman bekerja di sisi frontend maupun backend. Saya menyukai produk digital yang terasa tenang, jelas, dan fungsional, dengan perhatian yang kuat pada struktur kode, maintainability, dan detail antarmuka.",
       approach: {
         title: "Cara Saya Bekerja",
         items: [
@@ -57,7 +58,8 @@ const content = {
       greeting: "Hi, I'm",
       name: "Muhammad Fadlansyah Zikri Akhiruddin Rawosi",
       nickname: "Fadlan",
-      role: "Software Engineer & Full Stack Developer",
+      role: "Software Engineer",
+      roles: ["Software Engineer", "Full Stack Developer"],
       subtitle:
         "I build web products that feel clean, fast, and easy to evolve. My focus is on polished frontend work, maintainable backend systems, and a user experience that feels deliberate.",
       cta: {
@@ -68,7 +70,7 @@ const content = {
     about: {
       title: "About Me",
       description:
-        "I am a Software Engineer & Full Stack Developer with hands-on experience across frontend and backend development. I build digital products that are clear, reliable, and thoughtfully crafted, with strong attention to code quality, long-term maintainability, and refined interface detail.",
+        "I am a Software Engineer and Full Stack Developer with hands-on experience across frontend and backend development. I build digital products that are clear, reliable, and thoughtfully crafted, with strong attention to code quality, long-term maintainability, and refined interface detail.",
       approach: {
         title: "How I Work",
         items: [
